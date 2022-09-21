@@ -4,8 +4,39 @@
     box-sizing: border-box;
 }
 
-html{
+html,
+body{
     font-family: 'Nunito', sans-serif;
+}
+
+.title {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.title--h6{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #dc4f72;
+}
+
+.title--h3{
+    font-size: 46px;
+    font-weight: 700;
+    color: #2C3038;
+}
+
+.title--p{
+    color: #5a5a5a;
+    font-size: 16px;
+    line-height: 22.5px;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
 }
 
 /* HEADER */
@@ -126,4 +157,102 @@ header{
 
 .col__right{
     transform: rotate(180deg);
+}
+
+/* CHOOOSEUS */
+
+.chooseUs .block-col a{
+    text-decoration: none;
+}
+
+.chooseUs .block-col h3{
+    font-size: 26px;
+    color: #2C3038;
+    line-height: 35px;
+    font-weight: 700;
+}
+
+.chooseUs .block-col p{
+    color: #5a5a5a;
+    font-size: 16px;
+    line-height: 24.5px;
+    margin-top: 15px;
+}
+
+.block-col{
+    padding: 15px;
+    border-radius: 6px;
+    padding: 3rem 2rem;
+    background-color: #F7F9FC;
+    border: 1px solid #F7F9FC;
+    transition: 0.3s ease-in;
+}
+
+.block-col:hover{
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+    transform: translateY(-8px);
+}
+
+/* ABOUT */
+
+.about{
+    background-color: #F7F9FC;
+}
+
+.btn-outline-success{
+    background-color: #dc4f72;
+    border: 1px solid #dc4f72;
+    color: #fff;
+}
+
+.btn-outline-success:hover{
+    color: #fff;
+    background-color: #cf2952;
+    border: 1px solid #cf2952;
+}
+
+.about img{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+    border-radius: 6px;
+}
+
+.about img:hover{
+    transition: 0.3s ease-in-out;
+    transform: translateY(-8px);
+}
+
+/* NUMBER */
+
+.number{
+    background-color: #F7F9FC;
+}
+
+.number .number__item{
+    background-color: #fff;
+    padding:  22px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    box-shadow:0 0.5rem 1rem rgba(0, 0, 0, 0.09) ;
+}
+
+.number__item h4{
+    font-size: 16px;
+    line-height: 24.5px;
+    text-transform: capitalize;
+    color: #2C3038;
+    font-weight: 700;
+}
+
+.number__item p:first-of-type{
+    font-size: 50px;
+    color: #dc4f72;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}    
+
+.number__item p:last-of-type{
+    color: #5a5a5a;
 }
