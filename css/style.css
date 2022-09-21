@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Nunito', sans-serif;
+}
+
+/* HEADER */
+
+header{
+    background-color: white;
+    height: 90px;
+    display: grid;
+    align-items: center;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
+    transition: all 0.4s ease 0s;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.header__content .navbar-header{
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    font-weight: 700;
+    color: #dc4f72;
+}
+
+#navbarCapstone .navCap .nav-item{
+    padding: 0 15px;
+}
+
+#navbarCapstone .nav-link{
+    padding: 14px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2C3038;
+}
+
+#navbarCapstone .nav-link.active{
+    color: #dc4f72;
+}
+
+#navbarCapstone .dropdown-icon{
+    font-size: 12px;
+    color: #2C3038;
+    vertical-align:middle;
+}
+
+.btn-outline-primary{
+    color: #dc4f72;
+    border: 1px solid  #dc4f72;
+}
+
+.btn-outline-primary:hover{
+    color: white;
+    background-color: #dc4f72;
+    border: 1px solid  #dc4f72;
+}
+
+.btn-theme{
+    padding: 0 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 52px;
+    display: inline-block;
+    transition: all 0.3 ease-out;
+    max-width: 100%;
+}
+
+#navbarCapstone .nav-link::after{
+    content: "";
+    bottom: 13px;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #dc4f72;
+    transition: width 0.5s ease;
+
+}    
+
+#navbarCapstone .nav-link:hover::after{
+    width: 40%;
+}
+
+/* CAROUSEL */
+
+.myCarousel{
+    position: relative;
+    margin-top: 90px;
+}
+
+.myCarousel__content{
+    position: relative;
+    z-index: 1;
+    background: white;
+    background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)), url(../img/banner.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top:5rem;
+}
+
+.col__left h3{
+    font-size: 50px ;
+    font-weight: 700;
+    color: #2C3038;
+}
+
+.col__left p{
+    color: #5a5a5a;
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 480px;
+}
+
+.col__right{
+    transform: rotate(180deg);
+}
