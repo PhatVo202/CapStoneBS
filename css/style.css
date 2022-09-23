@@ -9,6 +9,10 @@ body{
     font-family: 'Nunito', sans-serif;
 }
 
+.clear{
+    clear: both;
+}
+
 .title {
     max-width: 750px;
     margin: 0 auto;
@@ -402,7 +406,7 @@ header{
     transform: translateX(1px);
 }
 
-
+/* FEATURE */
 
 /* SƯƠNG */
 
