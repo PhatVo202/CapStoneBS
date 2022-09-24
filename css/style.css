@@ -406,7 +406,16 @@ header{
     transform: translateX(1px);
 }
 
-/* FEATURE */
+/* FAQ */
+
+.faq .faq__content .faq__right ul li{
+  position: relative;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 25px 50px 25px 20px;
+  border: 1px solid #eee;
+  margin: 0 0 15px 0;
+}
 
 /* SƯƠNG */
 
