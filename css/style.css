@@ -432,24 +432,23 @@ header{
     margin: 120px auto 40px;
     
 }
-.about__content h2{
+.about1__content h2{
     text-align: center;
     font-weight: 700;
     margin-bottom: 50px;
 
 }
-
-.col-6 h3{
+.about1__item h3{
     font-weight: 600;
     margin-bottom: 10px;
     line-height: 44px
 }
-.col-6 li{
+.about1__item li{
     list-style: none;
     line-height: 30px;
     
 }
-.col-6 li i{
+.about1__item li i{
     border: 1px solid transparent;
     border-radius: 50%;
     padding: 5px;
@@ -458,7 +457,7 @@ header{
     background-color: rgba(220, 79, 114, 0.1);
     font-size: 10px;
 }
-.col-6 img{
+.about1__item img{
     width: 100%;
     transition: all .5s;
     transform: translateY(0);
