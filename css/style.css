@@ -462,7 +462,7 @@ header{
     transition: all .5s;
     transform: translateY(0);
 }
-.col-6:hover img{
+.about1__item:hover img{
     transform: translateY(-10px);
 }
 /* ABOUT 2 */
