@@ -7,11 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- OWLCAROUSEL CSS -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <i class="fa-regular fa-handshake"></i> -->
 
     <!-- GG FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +25,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
+    <!-- RESPONSIVE -->
+    <link rel="stylesheet" href="./css/responsive.css">
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -31,14 +37,15 @@
     <header>
         <div class=" header__content">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-ligh p-0 ">
+                <nav class="navbar navbar-expand-lg navbar-ligh bg-white p-0 ">
                     <a class="navbar-header navbar-brand" href="#">
                         <i class="fa-regular fa-handshake"></i>
                         <span> Masterwork</span>
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCapstone"
-                        aria-controls="navbarCapstone" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                        data-target="#navbarCapstone" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarCapstone">
@@ -83,13 +90,13 @@
         <div class="myCarousel__content">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-6 col__left">
+                    <div class="col-12 col-sm-12 col-lg-6 col-xl-6 col__left">
                         <h3>We Execute Our Ideas From Start to Finish</h3>
                         <p class="mt-3 mb-lg-5 mb-4">Building a beautiful interactive business for startups and
                             innovative companies.</p>
                         <a href="#" class="btn btn-outline-primary btn-theme">Get started</a>
                     </div>
-                    <div class="col-6 col__right">
+                    <div class="col-12 col-sm-12 col-lg-6 col-xl-6 col__right">
                         <img class="img-fluid" src="./img/main.png" alt="">
                     </div>
                 </div>
@@ -108,7 +115,7 @@
                     dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
             </div>
             <div class="row text-center">
-                <div class="col-4">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5 mt-sm-5">
                     <div class="block-col">
                         <a href="#" class="d-block">
                             <img src="./img/s1.png" alt="" class="img-fluid">
@@ -118,7 +125,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5 mt-sm-5">
                     <div class="block-col">
                         <a href="#" class="d-block">
                             <img src="./img/s2.png" alt="" class="img-fluid">
@@ -128,7 +135,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mt-5 mt-sm-5 mt-md-5 ">
                     <div class="block-col">
                         <a href="#" class="d-block">
                             <img src="./img/s3.png" alt="" class="img-fluid">
@@ -147,7 +154,7 @@
     <section class="about py-5">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-6">
+                <div class="col-12 col-sm-12 col col-lg-6 col-xl-6">
                     <h6 class="title--h6">ABOUT OUR COMPANY</h6>
                     <h3 class="title--h3">The Best Choice For Your Successful Business!</h3>
                     <p class="title--p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est repellendus
@@ -156,8 +163,8 @@
                         reiciendis, ab est magnam esse nesciunt ea fuga facere voluptatem.</p>
                     <a href="#" class="btn btn-outline-success btn-theme">read more</a>
                 </div>
-                <div class="col-6">
-                    <img src="./img/about.jpeg" alt="" class="img-fluid">
+                <div class="col-12 col-sm-12 col col-lg-6 col-xl-6 mt-5 mt-lg-0">
+                    <img src="./img/about.jpeg" alt="" class="img-fluid animate__img">
                 </div>
             </div>
         </div>
@@ -167,21 +174,21 @@
     <section class="number py-5">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-12  col-sm-6 col-lg-4 col-xl-4">
                     <div class="number__item">
                         <h4 class="mb-0">Happy Customers</h4>
                         <p>10458</p>
                         <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.</p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 mt-4 col-sm-6 mt-sm-0 mt-lg-0 col-lg-4  col-xl-4">
                     <div class="number__item">
                         <h4 class="mb-0">Winning Awards</h4>
                         <p>890</p>
                         <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.</p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 mt-4 col-sm-6 mt-sm-4 mt-lg-0 col-lg-4  col-xl-4">
                     <div class="number__item">
                         <h4 class="mb-0">Completed Projects</h4>
                         <p>5345</p>
@@ -221,7 +228,7 @@
             </div>
             <div>
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
                         <div class="solution__content">
                             <div class="solution-grid">
                                 <a href="#" class="d-block">
@@ -242,7 +249,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 mt-3 col-sm-12 mt-sm-3 col-md-6 mt-lg-0 col-lg-4 col-xl-4">
                         <div class="solution__content">
                             <div class="solution-grid">
                                 <a href="#" class="d-block">
@@ -263,7 +270,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="solution-col col-12 mt-3 col-sm-12 mt-sm-3  col-md-6 mt-md-3 mt-lg-0 col-lg-4 col-xl-4">
                         <div class="solution__content">
                             <div class="solution-grid">
                                 <a href="#" class="d-block">
@@ -299,25 +306,68 @@
                     Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
             </div>
             <div class="faq__content row">
-                <div class="col-5 mt-5">
+                <div class="col-12 col-sm-12 mt-5 col-md-5">
                     <div class="faq__left">
                         <img src="./img/women.jpeg" alt="" class="img-fluid">
                     </div>
                 </div>
-                <div class="col-7 mt-5">
+                <div class="col-12 col-sm-12 mt-5 col-md-7">
                     <div class="faq__right">
                         <ul>
                             <li>
-                                <input type="checkbox" name="" id="">
+                                <input type="checkbox">
                                 <i class="fa-solid fa-angle-down"></i>
-                                <h2></h2>
-                                <p></p>
+                                <h2>There are many passages but the majority?</h2>
+                                <p>Voluptates amet earum velit nobis aliquam
+                                    laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad
+                                    corrupti libero omnis sapiente
+                                    non assumenda, incidunt officiis eaque iste minima autem.</p>
                             </li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>
+                                <input type="checkbox">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <h2>Sed ut perspiciatis unde omnis?</h2>
+                                <p>Voluptates amet earum velit nobis aliquam
+                                    laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad
+                                    corrupti libero omnis sapiente
+                                    non assumenda, incidunt officiis eaque iste minima autem.</p>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <h2>At vero eos iusto odio ducimus qui?</h2>
+                                <p>Voluptates amet earum velit nobis aliquam
+                                    laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad
+                                    corrupti libero omnis sapiente
+                                    non assumenda, incidunt officiis eaque iste minima autem.</p>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <h2>We denounce with righteous?</h2>
+                                <p>Voluptates amet earum velit nobis aliquam
+                                    laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad
+                                    corrupti libero omnis sapiente
+                                    non assumenda, incidunt officiis eaque iste minima autem.</p>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <h2>perspiciatis unde omnis?</h2>
+                                <p>Voluptates amet earum velit nobis aliquam
+                                    laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad
+                                    corrupti libero omnis sapiente
+                                    non assumenda, incidunt officiis eaque iste minima autem.</p>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <h2>At vero eos iusto odio ducimus qui?</h2>
+                                <p>Voluptates amet earum velit nobis aliquam
+                                    laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad
+                                    corrupti libero omnis sapiente
+                                    non assumenda, incidunt officiis eaque iste minima autem.</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -334,11 +384,254 @@
                 <p class="title--p">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
                     Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
             </div>
+            <div class="row mt-5">
+                <div class="col-lg-10 mx-auto">
+                    <div>
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-toggle="pill"
+                                    data-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">Project One</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-toggle="pill"
+                                    data-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                    aria-selected="false">Project Two</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-contact-tab" data-toggle="pill"
+                                    data-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                    aria-selected="false">Project Three</button>
+                            </li>
+                            <div class="clear"></div>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <div class="row mt-5">
+                                    <div class="col-6">
+                                        <h3 class="font-weight-bold">Why a visual identity system is more memorable</h3>
+                                        <p>Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores
+                                            praesentium nulla quibusdam repellendus. consequatur minus aliquam corrupti
+                                            blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit
+                                            pariatur.</p>
+                                        <a href="#" class="btn btn-outline-primary btn-theme">Know more</a>
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="./img/b4.jpeg" alt="" class="img-fluid animate__img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <div class="row mt-5">
+                                    <div class="col-6">
+                                        <img src="./img/b5 (1).jpeg" alt="" class="img-fluid animate__img">
+                                    </div>
+                                    <div class="col-6">
+                                        <h3 class="font-weight-bold">
+                                            Make website that looks Lorem, ipsum dolor.
+                                        </h3>
+                                        <p>Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores
+                                            praesentium nulla quibusdam repellendus. consequatur minus aliquam corrupti
+                                            blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit
+                                            pariatur.</p>
+                                        <a href="#" class="btn btn-outline-primary btn-theme">Know more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">
+                                <div class="row mt-5">
+                                    <div class="col-6">
+                                        <h3 class="font-weight-bold">Why a visual identity system is more memorable</h3>
+                                        <p>Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores
+                                            praesentium nulla quibusdam repellendus. consequatur minus aliquam corrupti
+                                            blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit
+                                            pariatur.</p>
+                                        <a href="#" class="btn btn-outline-primary btn-theme">Know more</a>
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="./img/b6.jpeg" alt="" class="img-fluid animate__img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="feedback"></section>
-    <section class="community"></section>
-    <footer></footer>
+
+    <!-- FEEDBACK -->
+    <section class="feedback py-5">
+        <div class="container">
+            <div class="title text-center">
+                <h6 class="title--h6">OUR CLIENTS TESTIMONIALS</h6>
+                <h3 class="title--h3">What People Say</h3>
+                <p class="title--p">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                    Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+            </div>
+            <div class="mt-4">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="feedback__content">
+                            <div class="feedback__left">
+                                <img src="./img/team3.jpeg" alt="" class="img-fluid">
+                            </div>
+                            <div class="feedback__right">
+                                <span><i class="fa-solid fa-quote-left"></i></span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti
+                                    praesentium doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus
+                                    quam obcaecati sapiente quaerat et.</p>
+                                <div class="feedback__right-bot">
+                                    <h4>Isabella Mia</h4>
+                                    <p>Company name</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="feedback__content">
+                            <div class="feedback__left">
+                                <img src="./img/team4.jpeg" alt="" class="img-fluid">
+                            </div>
+                            <div class="feedback__right">
+                                <span><i class="fa-solid fa-quote-left"></i></span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti
+                                    praesentium doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus
+                                    quam obcaecati sapiente quaerat et.</p>
+                                <div class="feedback__right-bot">
+                                    <h4>Benjamin Lucas</h4>
+                                    <p>Company name</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="feedback__content">
+                            <div class="feedback__left">
+                                <img src="./img/team5.jpeg" alt="" class="img-fluid">
+                            </div>
+                            <div class="feedback__right">
+                                <span><i class="fa-solid fa-quote-left"></i></span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti
+                                    praesentium doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus
+                                    quam obcaecati sapiente quaerat et.</p>
+                                <div class="feedback__right-bot">
+                                    <h4>Oliver Bradley</h4>
+                                    <p>Company name</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="feedback__content">
+                            <div class="feedback__left">
+                                <img src="./img/team6.jpeg" alt="" class="img-fluid">
+                            </div>
+                            <div class="feedback__right">
+                                <span><i class="fa-solid fa-quote-left"></i></span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti
+                                    praesentium doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus
+                                    quam obcaecati sapiente quaerat et.</p>
+                                <div class="feedback__right-bot">
+                                    <h4>William James</h4>
+                                    <p>Company name</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMMUNITY -->
+    <section class="community py-5">
+        <div class="container ">
+            <div class="title text-center">
+                <h1 class=" font-weight-bold ">Ready to build your own brand community?</h1>
+                <p class="title--p ">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                    cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis
+                    quam.
+                </p>
+            </div>
+            <div class="d-flex justify-content-center mt-5">
+                <a href="#" class="btn btn-outline-primary btn-theme mr-3">Book a demo</a>
+                <a href="#" class="btn btn-outline-success btn-theme">get started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-6">
+                        <div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <h3>Company</h3>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-4">
+                                    <h3>Useful Links
+                                    </h3>
+                                    <ul>
+                                        <li><a href="#">Case Studies</a></li>
+                                        <li><a href="#">Our Branches</a></li>
+                                        <li><a href="#">Latest Media</a></li>
+                                        <li><a href="#">About Company</a></li>
+                                        <li><a href="#">Our People</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-4">
+                                    <h3>Our Services</h3>
+                                    <ul>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Our Terms</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Landing Page</a></li>
+                                        <li><a href="#">Our People</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 ">
+                        <h3>Newsletter</h3>
+                        <div class="form-col ">
+                            <h4>Get latest updates and offers.</h4>
+                            <form action="" class="d-flex justify-content-between mr-3">
+                                <input type="email" placeholder="Email Address">
+                                <button type="submit">Go</button>
+                            </form>
+                            <p>Sign up for our latest news & articles. We won’t give you spam mails.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom d-flex justify-content-between align-items-center pt-4 mt-5">
+                <p>© 2020 Masterwork. All rights reserved | Designed by <a href="#"
+                        class="text-decoration-none">W3Layouts</a></p>
+                <div>
+                    <a href="#" class="text-decoration-none text-dark px-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class=" text-dark px-3"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class=" text-dark px-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class=" text-dark px-3"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class=" text-dark px-3"> <i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- JQUERY JS -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -347,6 +640,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+    <!-- OWLCAROUSEL JS -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsive: {
+                0: {
+                    items: 2,
+                },
+            }
+        })
+    </script>
 </body>
 
 </html>
