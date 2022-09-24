@@ -731,6 +731,11 @@ footer {
   transition: 0.3s ease-in-out;
 }
 
+.footer__bottom i:hover {
+  color: #dc4f72;
+  transition: 0.3s ease-in-out;
+}
+
 /* SƯƠNG */
 
 /* .container{
