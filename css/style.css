@@ -784,49 +784,38 @@ footer {
 /* ABOUT 2 */
 .about2 {
   width: 80%;
-  margin: 50px auto;
+  margin: auto;
 }
-
-.col-3 h3 {
+.about2__item h3 {
   font-weight: 600;
   font-size: 26px;
   line-height: 32px;
 }
 
-.col-3 p {
+.about2__item p {
   font-size: 1rem;
   line-height: 25px;
 }
 
 /* FEATURES */
-.features {
-  /* width: 80%;
-    margin: 50px auto; */
+.feature {
+  width: 80%;
+  margin: 50px auto;
   height: 650px;
 }
 
-.features__content {
-  width: 80%;
-  margin: auto;
-}
-
-.features .block-col1 p {
-  color: #5a5a5a;
-  font-size: 16px;
-  line-height: 24.5px;
-  margin-top: 15px;
-}
-
-.block-col1 {
-  padding: 15px;
+.feature__item {
+  /* margin-right: 10px; */
+  /* padding: 15px; */
   border-radius: 6px;
   padding: 3rem 2rem;
   background-color: white;
   border: 1px solid #f7f9fc;
   transition: 0.3s ease-in;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.09);
 }
 
-.block-col1 i {
+.feature__item i {
   width: 70px;
   height: 70px;
   color: white;
@@ -838,32 +827,48 @@ footer {
   background-color: #dc4f72;
   transition: all 0.3s ease;
   animation: 0.5s linear;
+  transform: translateY(0);
 }
 
-.block-col1:hover i {
+.feature__item:hover i {
   transform: translateY(-50px);
 }
 
-.block-col1 h4 {
+.feature__item h4 {
   font-weight: 600;
   margin: 10px 0;
   transition: all 0.3s ease;
   animation: 0.5s linear 1s;
+  transform: translateY(0);
 }
 
-.block-col1:hover h4 {
+.feature__item:hover h4 {
   transform: translateY(-40px);
 }
-
-.block-col1 .description {
+.feature__item a{
+  color: #cf2952;
   opacity: 0;
-  transition: all 0.3s ease;
-  animation: 0.5s linear;
+  transition: all .5s ease;
+  animation: 0.5s;
+  transform: translateY(0);
+}
+.feature__item:hover a{
+  opacity: 1;
+  transform: translateY(-20px);
+  color: #cf2952;
+  font-weight: 700;
+
+}
+.feature__item p {
+  opacity: 0;
+  transition: all .5s ease;
+  animation: 0.5s;
+  
 }
 
-.block-col1 .description:hover {
+.feature__item:hover p {
   opacity: 1;
-  transform: translateY(-40px);
+  transform: translateY(-20px);
 }
 
 /* CREATIVE */
@@ -1285,3 +1290,6 @@ button::-moz-focus-inner {
   color: black;
   margin: 2px 0px 14px;
 }
+
+/* ------------------RESPONSIVE----------- */
+/* ABOUT1  */
