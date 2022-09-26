@@ -1485,3 +1485,10 @@ button::-moz-focus-inner {
 .pageCarousel__read{
   color: #cf2952;
 }
+.numberpage a,
+.numberpage span{
+  color: #0b0b0b;
+}
+.numberpage ul:hover a {
+  color: #dc4f72;
+}
