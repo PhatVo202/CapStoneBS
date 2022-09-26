@@ -1458,3 +1458,30 @@ button::-moz-focus-inner {
 }
 
 /* PAGECAROUSEL */
+.pageCarousel__content{
+  position: relative;
+}
+.pageCarousel .date{
+  position: absolute;
+  top: 0;
+  left: 420px;
+  /* left: 0; */
+  background-color: #dc4f72;
+  padding: 15px;
+  color: white;
+  font-weight: 700;
+
+}
+.pageCarousel__pro{
+  color: green;
+  padding: 5px 15px;
+  background: rgba(0, 128, 0, 0.308);
+  border-radius: 15px;
+}
+.pageCarousel__info h4{
+  font-size: 2rem;
+  font-weight: 700;
+}
+.pageCarousel__read{
+  color: #cf2952;
+}
