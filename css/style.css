@@ -1717,8 +1717,8 @@ button::-moz-focus-inner {
 }
 .message__right a:hover{
   opacity: 1;
-  border: 1px solid #f71f55;
-  background-color: #da1a4a;
+  border: 1px solid #d62f58;
+  background-color: #cf2952;
   color: white;
 
 }
