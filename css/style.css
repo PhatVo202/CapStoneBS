@@ -1669,3 +1669,54 @@ button::-moz-focus-inner {
   border: 1px solid #cf2952;
   border-radius: 5px;
 }
+
+/* MASSAGE  */
+
+.message__right {
+  height: 600px;
+}
+.message__right input{
+  padding: 10px 300px 10px 5px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(171, 171, 171, 0.219);
+  border-radius: 5px;
+  outline: none;
+  
+}
+.message__right input:hover{
+  border: 1px solid #da1a4a;
+  border-radius: 5px;
+  outline: none;
+  transition: all .5s;
+  
+}
+.message__right h5{
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.message__right a{
+  text-align: right;
+  background-color: #dc4f72;
+  border: 1px solid #dc4f72;
+  padding: 15px 50px;
+  color: white;
+  opacity: .9;
+  display: inline;
+  text-align: end;
+}
+.message__right a:hover{
+  opacity: 1;
+  border: 1px solid #f71f55;
+  background-color: #da1a4a;
+  color: white;
+
+}
+.message__content .message__text {
+  padding-bottom: 7rem;
+  margin-bottom: 2rem;
+}
+.message__content a{
+  text-align: end;
+  transition: all .5s;
+}
