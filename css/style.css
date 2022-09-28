@@ -1674,7 +1674,11 @@ button::-moz-focus-inner {
 
 .message__right {
   height: 600px;
+  box-shadow: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
+  border: rgb(244, 237, 237);
+  
 }
+
 .message__right input{
   padding: 10px 300px 10px 5px;
   margin-bottom: 20px;
@@ -1719,4 +1723,42 @@ button::-moz-focus-inner {
 .message__content a{
   text-align: end;
   transition: all .5s;
+}
+
+/* TOUCH */
+.touch i{
+  font-size: 1rem;
+  background-color: rgba(220, 79, 114, 0.329);
+  padding: 20px;
+  border-radius: 50%;
+  color: #da1a4a;
+}
+.touch a{
+  color: #0b0b0b;
+}
+.block-col1 {
+  padding: 15px;
+  border-radius: 6px;
+  padding: 3rem 2rem;
+  background-color: #f7f9fc;
+  border: 1px solid #f7f9fc;
+  transition: 0.3s ease-in;
+}
+
+.block-col1:hover {
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+  transform: translateY(-8px);
+}
+.block-col1 a:hover{
+  color: #dc4f72;
+}
+
+/* MAP  */
+.mapcontact iframe{
+  width: 100%;
+  height: 400px;
+  display: block;
+  padding: 20px;
 }
