@@ -1652,10 +1652,20 @@ button::-moz-focus-inner {
 .pageCarousel__read {
   color: #cf2952;
 }
+
+
 .numberpage a,
 .numberpage span {
   color: #0b0b0b;
 }
-.numberpage ul:hover a {
+.numberpage ul a:hover {
   color: #dc4f72;
+  border: 1px solid #cf2952;
+  border-radius: 5px;
+  background-color: white;
+}
+#numberpage__page1{
+  color: #cf2952;
+  border: 1px solid #cf2952;
+  border-radius: 5px;
 }
