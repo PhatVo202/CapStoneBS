@@ -1276,6 +1276,11 @@ footer {
 }
 
 /* CREATIVE */
+.creative{
+  width: 80%;
+  margin: 50px auto;
+  height: 800px;
+}
 .creative__video {
   position: relative;
 }
@@ -1650,7 +1655,7 @@ button::-moz-focus-inner {
     top: -30px;
   }
 }
-
+/* CREATIVE QUOTE */
 .creative__quote button {
   margin: 30px auto;
   border: 1px solid transparent;
@@ -1773,8 +1778,8 @@ button::-moz-focus-inner {
 }
 .message__right a:hover {
   opacity: 1;
-  border: 1px solid #f71f55;
-  background-color: #da1a4a;
+  border: 1px solid #d62f58;
+  background-color: #cf2952;
   color: white;
 }
 .message__content .message__text {
