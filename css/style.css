@@ -1210,6 +1210,11 @@ footer {
 }
 
 /* CREATIVE */
+.creative{
+  width: 80%;
+  margin: 50px auto;
+  height: 800px;
+}
 .creative__video {
   position: relative;
 }
@@ -1584,7 +1589,7 @@ button::-moz-focus-inner {
     top: -30px;
   }
 }
-
+/* CREATIVE QUOTE */
 .creative__quote button {
   margin: 30px auto;
   border: 1px solid transparent;
