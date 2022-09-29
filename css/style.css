@@ -72,6 +72,41 @@ header {
   font-weight: 700;
   color: #dc4f72;
 }
+/* Light theme */
+#myBody{
+  background-color:white;
+}
+#switchButton {
+  background-color: white;
+  font-size: 1.5rem;
+}
+#switchButton .fa-sun {
+  display: none;
+}
+#switchButton .fa-moon {
+  display: block;
+}
+
+/* Dark Theme*/
+#myBody{
+  background-color:black;
+}
+.dark #switchButton {
+  background-color: black;
+}
+.dark #switchButton .fa-sun {
+  display: block;
+  color: white;
+}
+
+.dark #switchButton .fa-moon {
+  display: none;
+}
+.dark .card {
+  background-color: black;
+  color: white;
+}
+
 
 #navbarCapstone .navCap .nav-item {
   padding: 0 15px;
