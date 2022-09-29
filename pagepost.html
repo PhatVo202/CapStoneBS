@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body id="myBody">
     <!-- HEADER -->
     <header>
         <div class=" header__content">
@@ -81,7 +81,16 @@
                     </div>
                 </nav>
             </div>
+            <div class="container">
+                <div style="width: 18rem;">
+                  <button class="btn" id="switchButton"  title="Click to switch theme">
+                    <i class="far fa-moon"></i>
+                    <i class="far fa-sun"></i>
+                  </button>
+
+            </div>
         </div>
+
     </header>
     <nav aria-label="breadcrumb" class="breadCrumb">
         <div class="breadcrumb container-xl bg-transparent p-0 mb-0">
@@ -405,6 +414,7 @@
             }
         })
     </script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
