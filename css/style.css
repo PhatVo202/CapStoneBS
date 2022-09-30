@@ -1893,3 +1893,23 @@ button::-moz-focus-inner {
   display: block;
   padding: 20px;
 }
+/* BACKTOTOP  */
+/* .backtotop{
+  height: 50px;
+  width: 50px;
+  padding-top: 10px;
+  text-align: center;
+  background-color: #dc4f72;
+  color: white;
+  display: block;
+  font-size: 1.2rem;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  visibility: hidden;
+  opacity: .5;
+}
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+} */
