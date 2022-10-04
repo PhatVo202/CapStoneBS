@@ -32,12 +32,12 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body id="myBody">
     <!-- HEADER -->
     <header>
         <div class=" header__content">
             <div class="container-xl">
-                <nav class="navbar navbar-expand-lg navbar-ligh bg-white p-0 ">
+                <nav class="navbar navbar-expand-lg navbar-ligh bg-white p-0 " id="headerId">
                     <a class="navbar-header navbar-brand" href="#">
                         <i class="fa-regular fa-handshake"></i>
                         <span> Masterwork</span>
@@ -72,8 +72,14 @@
                                     <a class="dropdown-item" href="#">Landing Page</a>
                                 </div>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item ">
                                 <a class="nav-link " href="./contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item mt-1">
+                                <a class="nav-link" id="switchButton">
+                                    <i class="fa-regular fa-sun"></i>
+                                    <i class="fa-regular fa-moon"></i>
+                                </a>
                             </li>
                             <li class="nav-item ml-lg-3 ">
                                 <button class="btn btn-outline-primary btn-theme">Schedule a demo</button>
@@ -110,7 +116,8 @@
             <div class="title text-center">
                 <h6 class="title--h6">WHY CHOOSE US</h6>
                 <h3 class="title--h3">Tools for business startup to professional</h3>
-                <p class="title--p">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                <p class="title--p">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                    cubilia
                     Curae; Nulla mollis
                     dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
             </div>
@@ -654,10 +661,6 @@
         $('.counter').countUp();
     </script>
 
-    <!-- BACKTOTOP -->
-    <link rel="stylesheet" href="./js/util.js">
-    <link rel="stylesheet" href="./js/main.js">
-
     <!-- OWLCAROUSEL JS -->
     <script src="./js/owl.carousel.min.js"></script>
     <script>
@@ -674,6 +677,14 @@
             }
         })
     </script>
+    <script>
+        document.getElementById("switchButton").onclick = function () {
+            document.getElementById("myBody").classList.toggle("dark");
+        };
+    </script>
+    <!-- BACKTOTOP  -->
+    <script src="./js/util.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
