@@ -11,6 +11,7 @@ html {
 html,
 body {
   font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
 }
 
 .clear {
@@ -747,6 +748,10 @@ footer {
   border-top: 2px solid #eee;
 }
 
+.footer__bottom p {
+  color: #2c3038;
+}
+
 .footer__bottom p a {
   color: #2c3038;
 }
@@ -1120,14 +1125,17 @@ footer {
   margin-bottom: 15px;
 }
 
-.blogsingle6 .form-control {
+.blogsingle6 .form-control,
+.modal-form .form-control {
   padding: 15px 20px;
   background-color: #f7f9fc;
   font-weight: bold;
 }
 
 .blogsingle6 input:focus,
-.blogsingle6 textarea:focus {
+.blogsingle6 textarea:focus,
+.modal-form input:focus,
+.modal-form textarea:focus {
   border: 1px solid #dc4f72;
   outline: none;
   background-color: #fff;
@@ -1172,14 +1180,13 @@ footer {
   opacity: 0.5;
 }
 
+#exampleModal .modal-content {
+  margin-top: 35%;
+}
+
 /* SƯƠNG */
 
 /* ABOUT1 */
-.about1 {
-  width: 80%;
-  margin: 120px auto 40px;
-}
-
 .about1__content h2 {
   text-align: center;
   font-weight: 700;
@@ -1218,10 +1225,7 @@ footer {
 }
 
 /* ABOUT 2 */
-.about2 {
-  width: 80%;
-  margin: auto;
-}
+
 .about2__item h3 {
   font-weight: 600;
   font-size: 26px;
@@ -1234,11 +1238,6 @@ footer {
 }
 
 /* FEATURES */
-.feature {
-  width: 80%;
-  margin: 50px auto;
-  height: 650px;
-}
 
 .feature__item {
   /* margin-right: 10px; */
@@ -1249,6 +1248,7 @@ footer {
   border: 1px solid #f7f9fc;
   transition: 0.3s ease-in;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.09);
+  height: 350px;
 }
 
 .feature__item i {
@@ -1271,6 +1271,7 @@ footer {
 }
 
 .feature__item h4 {
+  color: #2c3038;
   font-weight: 600;
   margin: 10px 0;
   transition: all 0.3s ease;
@@ -1279,7 +1280,7 @@ footer {
 }
 
 .feature__item:hover h4 {
-  transform: translateY(-40px);
+  transform: translateY(-20px);
 }
 .feature__item a {
   color: #cf2952;
@@ -1295,6 +1296,7 @@ footer {
   font-weight: 700;
 }
 .feature__item p {
+  color: #5a5a5a;
   opacity: 0;
   transition: all 0.5s ease;
   animation: 0.5s;
@@ -1306,19 +1308,16 @@ footer {
 }
 
 /* CREATIVE */
-.creative {
-  width: 80%;
-  margin: 50px auto;
-  height: 800px;
-}
+
 .creative__video {
   position: relative;
 }
 
 .creative__video .play-icon {
   position: absolute;
-  top: 270px;
-  left: 510px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 1rem;
   color: #dc4f72;
   background-color: white;
@@ -1329,6 +1328,17 @@ footer {
   border-radius: 50%;
   /* transition: 0.3s ease-in-out; */
   animation: ripple 1s linear infinite;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgb(255 255 255 / 15%),
+      0 0 0 10px rgb(255 255 255 / 15%), 0 0 0 20px rgb(255 255 255 / 15%);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgb(255 255 255 / 15%),
+      0 0 0 20px rgb(255 255 255 / 15%), 0 0 0 40px rgb(50 100 245 / 0%);
+  }
 }
 
 .creative__video img {
@@ -1499,7 +1509,6 @@ button.mfp-arrow {
   cursor: pointer;
   border: 0;
   background: #fff;
-  -webkit-appearance: none;
   display: block;
   padding: 0;
   z-index: 1046;
@@ -1591,7 +1600,6 @@ button::-moz-focus-inner {
   color: #fff;
   text-transform: uppercase;
   width: 17%;
-  -webkit-appearance: none;
 }
 
 .login input[type="submit"]:hover,
@@ -1685,11 +1693,6 @@ button::-moz-focus-inner {
     top: -30px;
   }
 }
-/* CREATIVE QUOTE */
-.creative__quote button {
-  margin: 30px auto;
-  border: 1px solid transparent;
-}
 
 /* CUSTOMER  */
 .customer__item img {
@@ -1708,7 +1711,8 @@ button::-moz-focus-inner {
   width: 100%;
   height: 250px;
   object-fit: cover;
-  object-position: center;
+  object-position: top center;
+  min-height: 100%;
 }
 
 .member__img h5 {
@@ -1726,14 +1730,77 @@ button::-moz-focus-inner {
   margin: 2px 0px 14px;
 }
 
+.member__img .card-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #5a5a5a;
+}
+
+.member-logo {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.member-logo i {
+  color: #fff;
+  font-size: 12px;
+}
+
+.logo--color1 {
+  background-color: #3c5997;
+}
+
+.logo--color2 {
+  background-color: #1fa1f1;
+}
+
+.member__img {
+  transition: all 0.3s ease-in-out;
+}
+
+.member__img:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+}
+
+.member__img:hover .member__logan {
+  color: #dc4f72;
+  transition: 0.3s ease-in-out;
+}
+
 /* PAGECAROUSEL */
-.pageCarousel__content {
+
+#carouselPage .carousel-control-prev,
+#carouselPage .carousel-control-next {
+  background-color: #dc4f72;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+#carouselPage .carousel-control-prev-icon,
+#carouselPage .carousel-control-next-icon {
+  width: 11px;
+}
+
+.pageCarousel__img {
   position: relative;
 }
-.pageCarousel .date {
+
+.pageCarousel__img img {
+  height: 100%;
+}
+
+.pageCarousel-test .date {
   position: absolute;
   top: 0;
-  left: 420px;
+  right: 15px;
   /* left: 0; */
   background-color: #dc4f72;
   padding: 15px;
@@ -1746,10 +1813,22 @@ button::-moz-focus-inner {
   background: rgba(0, 128, 0, 0.308);
   border-radius: 15px;
 }
-.pageCarousel__info h4 {
+.pageCarousel__info .page--text {
   font-size: 2rem;
+  line-height: 30px;
+  color: black;
   font-weight: 700;
+  transition: all 0.2s ease-in-out;
 }
+
+.pageCarousel__info a {
+  text-decoration: none;
+}
+
+.pageCarousel__info a:hover {
+  color: #dc4f72;
+}
+
 .pageCarousel__read {
   color: #cf2952;
 }
@@ -1773,24 +1852,37 @@ button::-moz-focus-inner {
 /* MASSAGE  */
 
 .message__right {
-  height: 600px;
   box-shadow: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
   border: rgb(244, 237, 237);
 }
 
 .message__right input {
-  padding: 10px 300px 10px 5px;
-  margin-bottom: 20px;
   border: 1px solid rgba(171, 171, 171, 0.219);
   border-radius: 5px;
   outline: none;
 }
-.message__right input:hover {
+
+.message__right input:focus {
   border: 1px solid #da1a4a;
   border-radius: 5px;
   outline: none;
   transition: all 0.5s;
+  box-shadow: none;
 }
+
+.message__content .message__text {
+  padding: 15px 20px;
+  height: 150px;
+  resize: none;
+}
+
+.message__content .message__text:focus {
+  border: 1px solid #dc4f72;
+  outline: none;
+  background-color: #fff;
+  box-shadow: none;
+}
+
 .message__right h5 {
   font-size: 2.5rem;
   font-weight: bolder;
@@ -1812,10 +1904,7 @@ button::-moz-focus-inner {
   background-color: #cf2952;
   color: white;
 }
-.message__content .message__text {
-  padding-bottom: 7rem;
-  margin-bottom: 2rem;
-}
+
 .message__content a {
   text-align: end;
   transition: all 0.5s;

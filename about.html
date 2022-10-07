@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUONG-ABOUT</title>
-    <!-- OWL CAROUSEL  -->
+    <title>Document</title>
+    <!-- OWLCAROUSEL CSS -->
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- POPUP -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <i class="fa-regular fa-handshake"></i> -->
 
     <!-- GG FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +27,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
+    <!-- RESPONSIVE -->
+    <link rel="stylesheet" href="./css/responsive.css">
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -33,7 +39,7 @@
     <header>
         <div class=" header__content">
             <div class="container-xl">
-                <nav class="navbar navbar-expand-lg navbar-ligh bg-white p-0 ">
+                <nav class="navbar navbar-expand-lg navbar-ligh bg-white p-0 " id="headerId">
                     <a class="navbar-header navbar-brand" href="#">
                         <i class="fa-regular fa-handshake"></i>
                         <span> Masterwork</span>
@@ -68,8 +74,14 @@
                                     <a class="dropdown-item" href="#">Landing Page</a>
                                 </div>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item ">
                                 <a class="nav-link " href="./contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item mt-1">
+                                <a class="nav-link" id="switchButton">
+                                    <i class="fa-regular fa-sun"></i>
+                                    <i class="fa-regular fa-moon"></i>
+                                </a>
                             </li>
                             <li class="nav-item ml-lg-3 ">
                                 <button class="btn btn-outline-primary btn-theme">Schedule a demo</button>
@@ -77,14 +89,6 @@
                         </ul>
                     </div>
                 </nav>
-            </div>
-            <div class="container">
-                <div style="width: 18rem;">
-                  <button class="btn" id="switchButton"  title="Click to switch theme">
-                    <i class="far fa-moon"></i>
-                    <i class="far fa-sun"></i>
-                  </button>
-
             </div>
         </div>
     </header>
@@ -97,11 +101,9 @@
         </div>
     </nav>
 
-    </div>
-
-    <!-- ABOUT1  -->
-    <section class="about1">
-        <div class="about1__content container">
+    <!-- ABOUT ONE -->
+    <section class="about-one py-5">
+        <div class="about1__content container-xl">
             <h2>About Us</h2>
             <div class="row">
                 <div class="about1__item col-12 col-lg-6">
@@ -128,100 +130,108 @@
                     </ul>
                 </div>
                 <div class="about1__item col-12 col-lg-6">
-                    <img class="img-fluit" src="./img/b5.jpg" alt="">
+                    <img class="img-fluid animate__img" src="./img/b5.jpg" alt="">
                 </div>
             </div>
         </div>
     </section>
-    <!-- ABOUT 2 -->
-    <section class="about2">
-        <div class="row d-flex justify-content-center">
-            <div class="about2__item col-12 col-sm-6 col-lg-4">
-                <h3>Our History 1795</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-            </div>
-            <div class="about2__item col-12 col-sm-6 col-lg-4">
-                <h3>The power of business</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-            </div>
-            <div class="about2__item col-12 col-sm-6 col-lg-4">
-                <h3>120 Customer service</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+
+    <!-- ABOUT TWO -->
+    <section class="about-two py-5">
+        <div class="container-xl">
+            <div class="row d-flex justify-content-center">
+                <div class="about2__item col-12 col-sm-6 col-lg-4">
+                    <h3>Our History 1795</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                </div>
+                <div class="about2__item col-12 col-sm-6 col-lg-4">
+                    <h3>The power of business</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                </div>
+                <div class="about2__item col-12 col-sm-6 col-lg-4">
+                    <h3>120 Customer service</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- FEATURES  -->
-    <section class="feature bg-light">
-        <div class="title text-center py-5">
-            <h6 class="title--h6">FEATURES</h6>
-            <h3 class="title--h3">The Largest Business Expert !</h3>
-            <p class="title--p">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-                Nulla mollis
-                dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+    <section class="feature-one bg-light py-5">
+        <div class="container-xl">
+            <div class="title text-center py-5">
+                <h6 class="title--h6">FEATURES</h6>
+                <h3 class="title--h3">The Largest Business Expert !</h3>
+                <p class="title--p">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                    Curae;
+                    Nulla mollis
+                    dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+            </div>
+            <div class="feature__content row text-center">
+                <div class="col-12 col-sm-6 col-lg-3 mt-5 mt-sm-0">
+                    <div class="feature__item block-col">
+                        <div class="icon-holder editContent">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <h4>Best Financial Advice</h4>
+                        </div>
+                        <div class="description">
+                            <p>Enean eget dolor dolor sit amet commodo ligula</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-sm-0">
+                    <div class="feature__item block-col">
+                        <div class="icon-holder editContent">
+                            <i class="fa-solid fa-user"></i>
+                            <h4>Best Financial Advice</h4>
+                        </div>
+                        <div class="description">
+                            <p>Enean eget dolor dolor sit amet commodo ligula</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0">
+                    <div class="feature__item block-col">
+                        <div class="icon-holder editContent">
+                            <i class="fa-solid fa-hand-peace"></i>
+                            <h4>Best Financial Advice</h4>
+                        </div>
+                        <div class="description">
+                            <p>Enean eget dolor dolor sit amet commodo ligula</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0">
+                    <div class=" feature__item block-col">
+                        <div class="icon-holder editContent">
+                            <i class="fa-solid fa-laptop"></i>
+                            <h4>Best Financial Advice</h4>
+                        </div>
+                        <div class="feature__bottom">
+                            <p>Enean eget dolor dolor sit amet commodo ligula</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="feature__content row text-center">
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="feature__item block-col">
-                    <div class="icon-holder editContent">
-                        <i class="fa-solid fa-dollar-sign"></i>
-                        <h4>Best Financial Advice</h4>
-                    </div>
-                    <div class="description">
-                        <p>Enean eget dolor dolor sit amet commodo ligula</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
 
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="feature__item block-col">
-                    <div class="icon-holder editContent">
-                        <i class="fa-solid fa-user"></i>
-                        <h4>Best Financial Advice</h4>
-                    </div>
-                    <div class="description">
-                        <p>Enean eget dolor dolor sit amet commodo ligula</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="feature__item block-col">
-                    <div class="icon-holder editContent">
-                        <i class="fa-solid fa-hand-peace"></i>
-                        <h4>Best Financial Advice</h4>
-                    </div>
-                    <div class="description">
-                        <p>Enean eget dolor dolor sit amet commodo ligula</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3"">
-                <div class=" feature__item block-col">
-                <div class="icon-holder editContent">
-                    <i class="fa-solid fa-laptop"></i>
-                    <h4>Best Financial Advice</h4>
-                </div>
-                <div class="feature__bottom">
-                    <p>Enean eget dolor dolor sit amet commodo ligula</p>
-                    <a href="#">Read More</a>
-                </div>
-            </div>
-
-        </div>
-        </div>
     </section>
 
     <!-- CREATIVE -->
-    <section class="creative new-block">
-        <div class="container text-center">
+    <section class="creative-one py-5">
+        <div class="container-xl text-center">
             <div class="title">
                 <h6 class="title--h6">CREATIVE SOLUTIONS</h6>
                 <h3 class="title--h3">Watch Our Two Minute Intro</h3>
@@ -235,7 +245,6 @@
                 <img src="./img/b9.jpg" alt="" class="img-fluid img-curver video-popup-image">
                 <a href="#small-dialog1" class="play-icon popup-with-zoom-anim play-view text-center position-absolute">
                     <span class="fa fa-play" aria-hidden="true"></span>
-
                 </a>
 
                 <div id="small-dialog1" class="w3ls_small_dialog wthree_pop mfp-hide">
@@ -247,14 +256,55 @@
                     </div>
                 </div>
             </div>
-            <div class="creative__quote">
-                <button class="btn btn-primary theme-button bg-danger">REQUEST A QUOTE</button>
+            <div class="pt-5">
+                <a href="#" class="btn btn-outline-success btn-theme" data-toggle="modal" data-target="#exampleModal">
+                    Request a quote
+                </a>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title" id="exampleModalLabel">Get Free Quote</h2>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <div class="modal-form">
+                                        <form action="" class="form-group">
+                                            <div><input type="text" placeholder="Name" class="form-control form-height"
+                                                    required>
+                                            </div>
+
+                                            <div><input type="Email" class="form-control form-height"
+                                                    placeholder="Email Address"></div>
+                                            <div><input type="text" class="form-control form-height"
+                                                    placeholder="Company">
+                                            </div>
+                                            <div><input type="text" class="form-control form-height"
+                                                    placeholder="Subject">
+                                            </div>
+                                            <div class="text-right">
+                                                <a type="submit" href="#"
+                                                    class="btn btn-outline-success btn-theme ">submit now</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
     <!-- CUSTOMER  -->
-    <section class="customer">
-        <div class="container owl-carousel owl-theme">
+    <section class="customer py-5">
+        <div class="container-xl owl-carousel owl-theme">
             <div class="customer__item">
                 <img src="./img/logo1.jpg" alt="">
             </div>
@@ -271,8 +321,8 @@
     </section>
 
     <!-- MEMBER  -->
-    <section class="member bg-light">
-        <div class="container">
+    <section class="member bg-light py-5">
+        <div class="container-xl">
             <div class="title text-center py-5">
                 <h6 class="title--h6">OUR TEAM MEMBERS</h6>
                 <h3 class="title--h3">Our Creative Team</h3>
@@ -280,140 +330,139 @@
                     Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
             </div>
             <div class="row">
-                <div class="col-sm-12 col-lg-6 col-xl-3 pb-3">
+                <div class="col-12 col-sm-6 col-lg-3 col-xl-3 pb-3">
                     <div class="member__img card">
-                        <img src="./img/johnson.jpg" class="member__item card-img-top" alt="...">
+                        <img src="./img/johnson.jpg" class="member__item card-img-top img-fluid" alt="...">
                         <div class="card-body">
                             <a href="#">
-                                <h5 class="card-title">Gwen Johnson</h5>
+                                <h5 class="card-title member__logan">Gwen Johnson</h5>
                             </a>
                             <p class="card-text">Founder & CEO</p>
-                            <a href="#" id="facebook" class="member__facebook btn btn-primary">
-                                <span><i class="fa-brands fa-facebook"></i></span>
-
+                            <a href="#" class="mr-2 member-logo logo--color1">
+                                <i class="fa-brands fa-facebook-f"></i>
                             </a>
-                            <a href="#" id="twitter" class="btn btn-primary">
+                            <a href="#" class="member-logo logo--color2">
                                 <i class="fa-brands fa-twitter"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-6 col-xl-3 pb-3">
+                <div class="col-12 col-sm-6 col-lg-3 col-xl-3 pb-3">
                     <div class="member__img card">
-                        <img src="./img/Roberto.jpg" class="member__item card-img-top" alt="...">
+                        <img src="./img/Roberto.jpg" class="member__item card-img-top img-fluid" alt="...">
                         <div class="card-body">
                             <a href="#">
-                                <h5 class="card-title">Daniel Roberto</h5>
+                                <h5 class="card-title member__logan">Daniel Roberto</h5>
                             </a>
                             <p class="card-text">Regional Manage</p>
-                            <a href="#" class="member__facebook btn btn-primary">
-                                <i class="fa-brands fa-facebook"></i>
+                            <a href="#" class="mr-2 member-logo logo--color1">
+                                <i class="fa-brands fa-facebook-f"></i>
                             </a>
-                            <a href="#" class="btn btn-primary">
+                            <a href="#" class="member-logo logo--color2">
                                 <i class="fa-brands fa-twitter"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-6 col-xl-3 pb-3">
+                <div class="col-12 col-sm-6 col-lg-3 col-xl-3 pb-3">
                     <div class="member__img card">
-                        <img src="./img/Abraham.jpg" class="member__item card-img-top" alt="...">
+                        <img src="./img/Abraham.jpg" class="member__item card-img-top img-fluid" alt="...">
                         <div class="card-body">
                             <a href="#">
-                                <h5 class="card-title">Dhony Abraham</h5>
+                                <h5 class="card-title member__logan">Dhony Abraham</h5>
                             </a>
                             <p class="card-text">Managing Partner</p>
-                            <a href="#" class="member__facebook btn btn-primary">
-                                <i class="fa-brands fa-facebook"></i>
+                            <a href="#" class="mr-2 member-logo logo--color1">
+                                <i class="fa-brands fa-facebook-f"></i>
                             </a>
-                            <a href="#" class="btn btn-primary">
+                            <a href="#" class="member-logo logo--color2">
                                 <i class="fa-brands fa-twitter"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-6 col-xl-3 pb-3">
+                <div class="col-12 col-sm-6 col-lg-3 col-xl-3 pb-3">
                     <div class="member__img card">
-                        <img src="./img/Dugonji.jpg" class="member__item card-img-top" alt="...">
+                        <img src="./img/Dugonji.jpg" class="member__item card-img-top img-fluid" alt="...">
                         <div class="card-body">
                             <a href="#">
-                                <h5 class="card-title">Marko Dugonji</h5>
+                                <h5 class="card-title member__logan">Marko Dugonji</h5>
                             </a>
                             <p class="card-text">Cheif Executive</p>
-                            <a href="#" class="member__facebook btn btn-primary">
-                                <i class="fa-brands fa-facebook"></i>
+                            <a href="#" class="mr-2 member-logo logo--color1">
+                                <i class="fa-brands fa-facebook-f"></i>
                             </a>
-                            <a href="#" class="btn btn-primary">
+                            <a href="#" class="member-logo logo--color2">
                                 <i class="fa-brands fa-twitter"></i>
                             </a>
                         </div>
                     </div>
 
                 </div>
-                <div class="col-sm-12 col-lg-6 col-xl-3 pb-3">
+                <div class="col-12 col-sm-6 col-lg-3 col-xl-3 pb-3">
                     <div class="member__img card">
-                        <img src="./img/anthony.jpg" class="member__item card-img-top" alt="...">
+                        <img src="./img/anthony.jpg" class="member__item card-img-top img-fluid" alt="...">
                         <div class="card-body">
                             <a href="#">
-                                <h5 class="card-title">Anthony</h5>
+                                <h5 class="card-title member__logan">Anthony</h5>
                             </a>
                             <p class="card-text">Engineering Officer</p>
-                            <a href="#" class="member__facebook btn btn-primary">
-                                <i class="fa-brands fa-facebook"></i>
+                            <a href="#" class="mr-2 member-logo logo--color1">
+                                <i class="fa-brands fa-facebook-f"></i>
                             </a>
-                            <a href="#" class="btn btn-primary">
+                            <a href="#" class="member-logo logo--color2">
                                 <i class="fa-brands fa-twitter"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-6 col-xl-3 pb-3">
+                <div class="col-12 col-sm-6 col-lg-3 col-xl-3 pb-3">
                     <div class="member__img card">
-                        <img src="./img/emma.jpg" class="member__item card-img-top" alt="...">
+                        <img src="./img/emma.jpg" class="member__item card-img-top img-fluid" alt="...">
                         <div class="card-body">
                             <a href="#">
-                                <h5 class="card-title">Emma Stone</h5>
+                                <h5 class="card-title member__logan">Emma Stone</h5>
                             </a>
                             <p class="card-text">Team Leader</p>
-                            <a href="#" class="member__facebook btn btn-primary">
-                                <i class="fa-brands fa-facebook"></i>
+                            <a href="#" class="mr-2 member-logo logo--color1">
+                                <i class="fa-brands fa-facebook-f"></i>
                             </a>
-                            <a href="#" class="btn btn-primary">
+                            <a href="#" class="member-logo logo--color2">
                                 <i class="fa-brands fa-twitter"></i>
                             </a>
                         </div>
                     </div>
 
                 </div>
-                <div class="col-sm-12 col-lg-6 col-xl-3 pb-3">
+                <div class="col-12 col-sm-6 col-lg-3 col-xl-3 pb-3">
                     <div class="member__img card">
-                        <img src="./img/byrd.jpg" class="member__item card-img-top" alt="...">
+                        <img src="./img/byrd.jpg" class="member__item card-img-top img-fluid" alt="...">
                         <div class="card-body">
                             <a href="#">
-                                <h5 class="card-title">Rhoda Byrd</h5>
+                                <h5 class="card-title member__logan">Rhoda Byrd</h5>
                             </a>
                             <p class="card-text">Technology Officer</p>
-                            <a href="#" class="member__facebook btn btn-primary">
-                                <i class="fa-brands fa-facebook"></i>
+                            <a href="#" class="mr-2 member-logo logo--color1">
+                                <i class="fa-brands fa-facebook-f"></i>
                             </a>
-                            <a href="#" class="btn btn-primary">
+                            <a href="#" class="member-logo logo--color2">
                                 <i class="fa-brands fa-twitter"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-6 col-xl-3 pb-3">
+                <div class="col-12 col-sm-6 col-lg-3 col-xl-3 pb-3">
                     <div class="member__img card">
-                        <img src="./img/max.jpg" class="member__item card-img-top" alt="...">
+                        <img src="./img/max.jpg" class="member__item card-img-top img-fluid" alt="...">
                         <div class="card-body">
                             <a href="#">
-                                <h5 class="card-title">Max Stoiber</h5>
+                                <h5 class="card-title member__logan">Max Stoiber</h5>
                             </a>
                             <p class="card-text">Manager</p>
-                            <a href="#" class="member__facebook btn btn-primary">
-                                <i class="fa-brands fa-facebook"></i>
+                            <a href="#" class="mr-2 member-logo logo--color1">
+                                <i class="fa-brands fa-facebook-f"></i>
                             </a>
-                            <a href="#" class="btn btn-primary">
+                            <a href="#" class="member-logo logo--color2">
                                 <i class="fa-brands fa-twitter"></i>
                             </a>
                         </div>
@@ -422,6 +471,7 @@
             </div>
         </div>
     </section>
+
     <!-- COMMUNITY -->
     <section class="community py-5">
         <div class="container-xl ">
@@ -433,12 +483,13 @@
                 </p>
             </div>
             <div class="d-flex justify-content-center mt-5">
-                <a href="#" class="btn btn-outline-primary btn-theme mr-3 respon-btn">Book a demo</a>
-                <a href="#" class="btn btn-outline-success btn-theme  respon-btn">get started</a>
+                <a href="./contact.html" class="btn btn-outline-primary btn-theme mr-3 respon-btn">Book a demo</a>
+                <a href="./contact.html" class="btn btn-outline-success btn-theme  respon-btn">get started</a>
             </div>
         </div>
     </section>
-    <!-- FOOTER  -->
+
+    <!-- FOOTER -->
     <footer class="py-5">
         <div class="container-xl">
             <div class="footer__top">
@@ -495,7 +546,8 @@
             </div>
             <div class="footer__bottom d-flex justify-content-between align-items-center pt-4 mt-5">
                 <p>© 2020 Masterwork. All rights reserved | Designed by <a href="#"
-                        class="text-decoration-none">W3Layouts</a></p>
+                        class="text-decoration-none">W3Layouts</a>
+                </p>
                 <div>
                     <a href="#" class="text-decoration-none text-dark px-3"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class=" text-dark px-3"><i class="fab fa-linkedin-in"></i></a>
@@ -506,10 +558,10 @@
             </div>
         </div>
     </footer>
-    <!-- BACKTOTOP -->
-   <a href="#" class="backToTop cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"><i
-    class="fa-solid fa-angle-up"></i></a>
 
+    <!-- BACKTOTOP -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"><i
+            class="fa-solid fa-angle-up"></i></a>
 
     <!-- JQUERY JS -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -519,10 +571,51 @@
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
 
-    <!-- POPUP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!--WAYPOINTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/jquery.countup.min.js"></script>
+    <script>
+        $('.counter').countUp();
+    </script>
 
-    <!-- VIDEO-ABOUT  -->
+    <!-- OWLCAROUSEL JS -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            dotsClass: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                480: {
+                    items: 2,
+                },
+                1000: {
+                    items: 4,
+                }
+            }
+        })
+    </script>
+
+    <!-- DARK THEME -->
+    <script>
+        document.getElementById("switchButton").onclick = function () {
+            document.getElementById("myBody").classList.toggle("dark");
+        };
+    </script>
+    <!-- BACKTOTOP  -->
+    <script src="./js/util.js"></script>
+    <script src="./js/main.js"></script>
+
+    <!-- POPUP JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script>
         $(document).ready(function () {
             $(".popup-with-zoom-anim").magnificPopup({
@@ -537,24 +630,10 @@
                 mainClass: "my-mfp-zoom-in"
             });
         });
-
-    </script>
-    <!-- OWL CAROUSEL JS  -->
-    <script src="./js/owl.carousel.min.js"></script>
-    <script>
-        $('.owl-carousel').owlCarousel({
-            items: 4,
-            loop: true,
-            margin: 10,
-            autoplay: true,
-            autoplayTimeout: 3000,
-            autoplayHoverPause: true
-        })
     </script>
     <script src="./js/index.js"></script>
-    <!-- BACKTOTOP  -->
-    <script src="./js/util.js"></script>
-    <script src="./js/main.js"></script>
+
+
 </body>
 
 </html>

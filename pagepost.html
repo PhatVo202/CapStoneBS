@@ -36,7 +36,7 @@
     <header>
         <div class=" header__content">
             <div class="container-xl">
-                <nav class="navbar navbar-expand-lg navbar-ligh bg-white p-0 ">
+                <nav class="navbar navbar-expand-lg navbar-ligh bg-white p-0 " id="headerId">
                     <a class="navbar-header navbar-brand" href="#">
                         <i class="fa-regular fa-handshake"></i>
                         <span> Masterwork</span>
@@ -71,8 +71,14 @@
                                     <a class="dropdown-item" href="#">Landing Page</a>
                                 </div>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item ">
                                 <a class="nav-link " href="./contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item mt-1">
+                                <a class="nav-link" id="switchButton">
+                                    <i class="fa-regular fa-sun"></i>
+                                    <i class="fa-regular fa-moon"></i>
+                                </a>
                             </li>
                             <li class="nav-item ml-lg-3 ">
                                 <button class="btn btn-outline-primary btn-theme">Schedule a demo</button>
@@ -81,17 +87,9 @@
                     </div>
                 </nav>
             </div>
-            <div class="container">
-                <div style="width: 18rem;">
-                  <button class="btn" id="switchButton"  title="Click to switch theme">
-                    <i class="far fa-moon"></i>
-                    <i class="far fa-sun"></i>
-                  </button>
-
-            </div>
         </div>
-
     </header>
+
     <nav aria-label="breadcrumb" class="breadCrumb">
         <div class="breadcrumb container-xl bg-transparent p-0 mb-0">
             <a href="./index.html">Home</a>
@@ -99,57 +97,68 @@
             <li class="breadcrumb-item active ml-2 " aria-current="page">Pages</li>
         </div>
     </nav>
-    <section class="pageCarousel">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="pageCarousel__content owl-carousel owl-theme">
-                        <div class="row pageCarousel__item">
-                            <a href="#" class="col-lg-12 col-xl-6">
-                                <img src="./img/b6.jpeg" alt="">
+
+    <section class="pageCarousel-test py-5 bg-light">
+        <div class="container-xl">
+            <div id="carouselPage" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row pageCarousel__item bg-white">
+                            <a href="./blogsingle.html" class="pageCarousel__img col-12 col-sm-12 col-lg-6 col-xl-6">
+                                <img src="./img/b6.jpeg" alt="" class="img-fluid">
                                 <p class="date">8 Sep, 2020</p>
                             </a>
-                            <div class="col-lg-12 col-xl-6 pageCarousel__info py-5">
-                                <label class="pageCarousel__pro">Programming</label>
-                                <h4>The Best Choice For Your Successful Business</h4>
+                            <div class="col-12 col-sm-12 col-lg-6 col-xl-6 pageCarousel__info py-5 pr-5 pl-lg-0 pl-5">
+                                <label class="taglabel green">Programming</label>
+                                <a href="./blogsingle.html" class="d-block page--text mb-2">The Best Choice For Your
+                                    Successful
+                                    Business</a>
                                 <p class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, deleniti
                                     ex placeat tempore quasi cum officia omnis deserunt facere praesentium rem laborum
                                     iure, molestias, sequi quisquam inventore ratione odio accusantium?</p>
-                                <a href="#" class="pageCarousel__read">Read More
+                                <a href="./blogsingle.html" class="pageCarousel__read">Read More
                                     <span><i class="fa-solid fa-arrow-right"></i></span>
                                 </a>
                             </div>
 
                         </div>
-                        <div class="row pageCarousel__item">
-                            <a href="#" class="col-lg-12 col-xl-6">
-                                <img src="./img/b5 (1).jpeg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row pageCarousel__item bg-white">
+                            <a href="./blogsingle.html" class="pageCarousel__img col-12 col-sm-12 col-lg-6 col-xl-6">
+                                <img src="./img/b5 (1).jpeg" alt="" class="img-fluid">
+                                <p class="date">8 Sep, 2020</p>
                             </a>
-                            <p class="date">8 Sep, 2020</p>
-                            <div class="pageCarousel__info col-lg-12 col-xl-6 py-5">
-                                <label class="pageCarousel__pro">Programming</label>
-                                <h4>The Best Choice For Your Successful Business</h4>
+                            <div class="pageCarousel__info col-12 col-sm-12 col-lg-6 col-xl-6 py-5 pr-5 pl-lg-0 pl-5 ">
+                                <label class="taglabel blue">Industry</label>
+                                <a href="./blogsingle.html" class="d-block page--text mb-2">The Best Choice For Your
+                                    Successful
+                                    Business</a>
                                 <p class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, deleniti
                                     ex placeat tempore quasi cum officia omnis deserunt facere praesentium rem laborum
                                     iure, molestias, sequi quisquam inventore ratione odio accusantium?</p>
-                                <a href="#" class="pageCarousel__read">Read More
+                                <a href="./blogsingle.html" class="pageCarousel__read">Read More
                                     <span><i class="fa-solid fa-arrow-right"></i></span>
                                 </a>
                             </div>
 
                         </div>
-                        <div class="pageCarousel__item row">
-                            <a href="#" class="col-lg-12 col-xl-6">
-                                <img src="./img/b9.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row pageCarousel__item bg-white">
+                            <a href="./blogsingle.html" class="pageCarousel__img col-12 col-sm-12 col-lg-6 col-xl-6">
+                                <img src="./img/b9.jpg" alt="" class="img-fluid">
+                                <p class="date">8 Sep, 2020</p>
                             </a>
-                            <p class="date">8 Sep, 2020</p>
-                            <div class="pageCarousel__info col-lg-12 col-xl-6 py-5">
-                                <label class="pageCarousel__pro">Programming</label>
-                                <h4>The Best Choice For Your Successful Business</h4>
+                            <div class="pageCarousel__info col-12 col-sm-12 col-lg-6 col-xl-6 py-5 pr-5 pl-lg-0 pl-5">
+                                <label class="taglabel red">Design</label>
+                                <a href="./blogsingle.html" class="d-block page--text mb-2">The Best Choice For Your
+                                    Successful
+                                    Business</a>
                                 <p class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, deleniti
                                     ex placeat tempore quasi cum officia omnis deserunt facere praesentium rem laborum
                                     iure, molestias, sequi quisquam inventore ratione odio accusantium?</p>
-                                <a href="#" class="pageCarousel__read">Read More
+                                <a href="./blogsingle.html" class="pageCarousel__read">Read More
                                     <span><i class="fa-solid fa-arrow-right"></i></span>
                                 </a>
                             </div>
@@ -157,15 +166,24 @@
                         </div>
                     </div>
                 </div>
+                <button class="carousel-control-prev ml-2" type="button" data-target="#carouselPage" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next mr-2" type="button" data-target="#carouselPage" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
             </div>
         </div>
     </section>
+
     <!-- CORPORATE  -->
     <section class="solution py-5">
-        <div class="container">
+        <div class="container-xl">
             <div>
                 <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4 ">
                         <div class="solution__content">
                             <div class="solution-grid">
                                 <a href="#" class="d-block">
@@ -179,14 +197,14 @@
                                 <p>Lorem ipsum dolor sit amet nostrum ad minus libero fugiat molestiae ullam ipsam quas
                                     unde
                                     earum...</p>
-                                <a href="#" class="btn btn-infor">
+                                <a href="./blogsingle.html" class="btn btn-infor">
                                     Know more
                                     <span><i class="fa-solid fa-arrow-right"></i></span>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0 mt-lg-0">
                         <div class="solution__content">
                             <div class="solution-grid">
                                 <a href="#" class="d-block">
@@ -200,14 +218,14 @@
                                 <p>Lorem ipsum dolor sit amet nostrum ad minus libero fugiat molestiae ullam ipsam quas
                                     unde
                                     earum...</p>
-                                <a href="#" class="btn btn-infor">
+                                <a href="./blogsingle.html" class="btn btn-infor">
                                     Know more
                                     <span><i class="fa-solid fa-arrow-right"></i></span>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4 mt-5 mt-lg-0">
                         <div class="solution__content">
                             <div class="solution-grid">
                                 <a href="#" class="d-block">
@@ -221,14 +239,14 @@
                                 <p>Lorem ipsum dolor sit amet nostrum ad minus libero fugiat molestiae ullam ipsam quas
                                     unde
                                     earum...</p>
-                                <a href="#" class="btn btn-infor">
+                                <a href="./blogsingle.html" class="btn btn-infor">
                                     Know more
                                     <span><i class="fa-solid fa-arrow-right"></i></span>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4 mt-5 ">
                         <div class="solution__content">
                             <div class="solution-grid">
                                 <a href="#" class="d-block">
@@ -242,14 +260,14 @@
                                 <p>Lorem ipsum dolor sit amet nostrum ad minus libero fugiat molestiae ullam ipsam quas
                                     unde
                                     earum...</p>
-                                <a href="#" class="btn btn-infor">
+                                <a href="./blogsingle.html" class="btn btn-infor">
                                     Know more
                                     <span><i class="fa-solid fa-arrow-right"></i></span>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4 mt-5">
                         <div class="solution__content">
                             <div class="solution-grid">
                                 <a href="#" class="d-block">
@@ -263,14 +281,14 @@
                                 <p>Lorem ipsum dolor sit amet nostrum ad minus libero fugiat molestiae ullam ipsam quas
                                     unde
                                     earum...</p>
-                                <a href="#" class="btn btn-infor">
+                                <a href="./blogsingle.html" class="btn btn-infor">
                                     Know more
                                     <span><i class="fa-solid fa-arrow-right"></i></span>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4 mt-5">
                         <div class="solution__content">
                             <div class="solution-grid">
                                 <a href="#" class="d-block">
@@ -284,7 +302,7 @@
                                 <p>Lorem ipsum dolor sit amet nostrum ad minus libero fugiat molestiae ullam ipsam quas
                                     unde
                                     earum...</p>
-                                <a href="#" class="btn btn-infor">
+                                <a href="./blogsingle.html" class="btn btn-infor">
                                     Know more
                                     <span><i class="fa-solid fa-arrow-right"></i></span>
                                 </a>
@@ -316,6 +334,7 @@
             </ul>
         </nav>
     </section>
+
     <!-- FOOTER  -->
     <footer class="py-5">
         <div class="container-xl">
@@ -384,9 +403,9 @@
             </div>
         </div>
     </footer>
-   <!-- BACKTOTOP -->
-   <a href="#" class="backToTop cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"><i
-    class="fa-solid fa-angle-up"></i></a>
+    <!-- BACKTOTOP -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"><i
+            class="fa-solid fa-angle-up"></i></a>
 
 
     <!-- JQUERY JS -->
@@ -404,6 +423,7 @@
             loop: true,
             margin: 1,
             nav: true,
+            dotsClass: false,
             responsive: {
                 0: {
                     items: 1
@@ -421,6 +441,8 @@
     <!-- BACKTOTOP  -->
     <script src="./js/util.js"></script>
     <script src="./js/main.js"></script>
+
+
 </body>
 
 </html>

@@ -74,6 +74,12 @@
                             <li class="nav-item">
                                 <a class="nav-link " href="./contact.html">Contact</a>
                             </li>
+                            <li class="nav-item mt-1">
+                                <a class="nav-link" id="switchButton">
+                                    <i class="fa-regular fa-sun"></i>
+                                    <i class="fa-regular fa-moon"></i>
+                                </a>
+                            </li>
                             <li class="nav-item ml-lg-3 ">
                                 <button class="btn btn-outline-primary btn-theme">Schedule a demo</button>
                             </li>
@@ -81,14 +87,7 @@
                     </div>
                 </nav>
             </div>
-            <div class="container">
-                <div style="width: 18rem;">
-                  <button class="btn" id="switchButton"  title="Click to switch theme">
-                    <i class="far fa-moon"></i>
-                    <i class="far fa-sun"></i>
-                  </button>
-
-            </div>
+        </div>
     </header>
     <nav aria-label="breadcrumb" class="breadCrumb">
         <div class="breadcrumb container-xl bg-transparent p-0 mb-0">
@@ -103,28 +102,32 @@
             <h3 class="title--h3">Contact Us</h3>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <img src="./img/contact.jpg" alt="">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 pr-lg-0 text-center">
+                    <img src="./img/contact.jpg" alt="" class="img-fluid animate__img">
                 </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6  pl-lg-0">
                     <div class="message__right card">
                         <div class="message__content card-body">
                             <h5 class="card-title">Drop Us a Message</h5>
                             <p class="card-text">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices turpis
                                 sodales quis. Integer sit amet mattis quam.</p>
-                            <input type="text" placeholder="Enter your name" class="bg-light">
-                            <br>
-                            <input type="email" name="" id="" placeholder="Enter your email" class="bg-light">
-                            <br>
-                            <input type="text" placeholder="Subject" class="bg-light">
-                            <br>
-                            <input type="text" placeholder="Enter your message" class="message__text">
-                            <br>
-                            <div class="text-right">
-                                <a href="#" class="btn" id="send">SEND</a>
-                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Enter your name"
+                                    class="bg-light font-weight-bold form-control form-height mb-3">
 
+                                <input type="email" name="" id="" placeholder="Enter your email"
+                                    class="bg-light font-weight-bold form-control form-height mb-3">
+
+                                <input type="text" placeholder="Subject"
+                                    class="bg-light font-weight-bold form-control form-height mb-3">
+                                <textarea cols="30" rows="10"
+                                    class="form-control message__text font-weight-bold bg-light mb-3"
+                                    placeholder="Enter your message"></textarea>
+                                <div class="text-right ">
+                                    <a href="#" class="btn btn-outline-success btn-theme ">send</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -252,7 +255,7 @@
     </footer>
     <!-- BACKTOTOP -->
     <a href="#" class="backToTop cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"><i
-        class="fa-solid fa-angle-up"></i></a>
+            class="fa-solid fa-angle-up"></i></a>
 
     <!-- JQUERY JS -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -265,6 +268,7 @@
     <!-- BACKTOTOP  -->
     <script src="./js/util.js"></script>
     <script src="./js/main.js"></script>
+
 </body>
 
 </html>
