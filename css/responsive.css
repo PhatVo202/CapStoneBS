@@ -107,6 +107,13 @@
   }
 }
 
+@media screen and (max-width: 418px) {
+  .solution .page-link {
+    padding: 5px;
+    font-size: 13px;
+  }
+}
+
 @media screen and (max-width: 365.98px) {
   .community .container .respon-btn {
     padding: 5px 10px;

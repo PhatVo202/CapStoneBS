@@ -1,0 +1,12 @@
+Họ tên thành viên: Võ Lê Trường Phát, Võ Diễm Sương.
+Nhiệm vụ:
++Võ Lê Trường Phát: 
+.Trang index.html 
+.Trang service.html
+.Trang blogsingle.html
+.Dark theme
+
++Võ Diễm Sương:
+.Trang pagepost.html
+.Trang about.html
+.Trang contact.html

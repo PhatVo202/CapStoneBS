@@ -18,6 +18,10 @@ body {
   clear: both;
 }
 
+.text-black {
+  color: #2c3038;
+}
+
 .title {
   max-width: 750px;
   margin: 0 auto;
@@ -86,7 +90,7 @@ header {
 }
 
 #navbarCapstone .nav-link.active {
-  color: #dc4f72;
+  color: #dc4f72 !important;
 }
 
 #navbarCapstone .dropdown-icon {
@@ -346,6 +350,10 @@ header {
 
 /* SOLUTION */
 
+.solution {
+  background-color: #fff;
+}
+
 .solution .solution-grid a {
   position: relative;
   overflow: hidden;
@@ -512,6 +520,7 @@ header {
   position: absolute;
   right: 25px;
   top: 28px;
+  color: black;
 }
 
 .faq .faq__content .faq__right h2 {
@@ -552,7 +561,7 @@ header {
 .featured button.nav-link.active {
   margin: 0 auto;
   background-color: transparent;
-  color: #dc4f72;
+  color: #dc4f72 !important;
 }
 
 .featured button.nav-link.active {
@@ -921,7 +930,6 @@ footer {
 .blogsingle__title .text h2 {
   font-size: 45px;
   line-height: 50px;
-  color: #2c3038;
   margin: 15px 0;
   font-weight: 700;
 }
@@ -941,7 +949,6 @@ footer {
 }
 
 .blogsingle__text {
-  color: #2c3038;
   max-width: 750px;
   margin: auto;
   padding-top: 17px;
@@ -1050,13 +1057,11 @@ footer {
 .blogsingle4 h3 {
   font-size: 35px;
   font-weight: 600;
-  color: #2c3038;
 }
 
 .blog__comment .comment__right h5 {
   font-size: 20px;
   line-height: 25px;
-  color: #2c3038;
   font-weight: 600;
 }
 
@@ -1081,7 +1086,6 @@ footer {
 
 .blogsingle5 h3,
 .blogsingle6 h3 {
-  color: #2c3038;
   font-size: 35px;
   font-weight: 600;
 }
@@ -1093,6 +1097,7 @@ footer {
 
 .card-body {
   border: 1px solid #eee;
+  background-color: #fff;
 }
 
 .card__grid {
@@ -1225,6 +1230,10 @@ footer {
 }
 
 /* ABOUT 2 */
+
+.about2__item {
+  padding: 15px;
+}
 
 .about2__item h3 {
   font-weight: 600;
@@ -1854,6 +1863,7 @@ button::-moz-focus-inner {
 .message__right {
   box-shadow: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
   border: rgb(244, 237, 237);
+  border-radius: 6px;
 }
 
 .message__right input {
@@ -1868,6 +1878,10 @@ button::-moz-focus-inner {
   outline: none;
   transition: all 0.5s;
   box-shadow: none;
+}
+
+.message__content {
+  background-color: #fff;
 }
 
 .message__content .message__text {
@@ -1911,9 +1925,13 @@ button::-moz-focus-inner {
 }
 
 /* TOUCH */
+.touch {
+  background-color: #f7f9fc;
+}
+
 .touch i {
   font-size: 1rem;
-  background-color: rgba(220, 79, 114, 0.329);
+  background-color: rgba(220, 79, 114, 0.1);
   padding: 20px;
   border-radius: 50%;
   color: #da1a4a;
@@ -1925,19 +1943,22 @@ button::-moz-focus-inner {
   padding: 15px;
   border-radius: 6px;
   padding: 3rem 2rem;
-  background-color: #f7f9fc;
-  border: 1px solid #f7f9fc;
+  background-color: #fff;
   transition: 0.3s ease-in;
 }
 
 .block-col1:hover {
-  background-color: #ffffff;
-  border: 1px solid #eee;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
   transform: translateY(-8px);
 }
 .block-col1 a:hover {
   color: #dc4f72;
+}
+.block-col1 h4 {
+  color: #2c3038;
+}
+.block-col1 p {
+  color: #0b0b0b;
 }
 
 /* MAP  */
@@ -1978,7 +1999,6 @@ button::-moz-focus-inner {
 }
 .dark #switchButton .fa-sun {
   display: block;
-  color: #2c3038;
 }
 
 .dark #switchButton .fa-moon {
@@ -1986,5 +2006,76 @@ button::-moz-focus-inner {
 }
 .dark .card {
   background-color: transparent;
+  color: white;
+}
+
+.dark .color-white {
+  color: #fdfffc !important;
+}
+
+.dark .color-white1 {
+  color: #fdfffc;
+}
+
+.dark .color-title-white {
+  color: #b7b7b7;
+}
+
+.dark .background-gobal {
+  background-color: #282828 !important;
+}
+
+.dark .background-dark-card {
+  background-color: #222222 !important;
+  border: 1px solid #222222;
+}
+
+.dark .background-dark {
+  background-color: #222222;
+  border: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1rem 3rem rgb(23 19 19);
+  border-radius: 30px;
+}
+
+.dark .background-dark:hover {
+  transition: 0.3s;
+  box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
+}
+
+.dark .border-white:hover {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: 0.3s ease-in;
+}
+
+.dark .carousel-dark {
+  background-image: linear-gradient(
+      to right,
+      #222222,
+      rgba(255, 255, 255, 0.92)
+    ),
+    url(../img/banner.jpeg);
+}
+
+.dark header,
+.dark .header__content,
+.dark .navbar {
+  background-color: #282828 !important;
+}
+
+.dark .bg-img {
+  background-image: linear-gradient(
+      to right,
+      rgb(105 107 111 / 77%),
+      rgb(73 76 80 / 77%)
+    ),
+    url(../img/feedbackbg.jpeg);
+}
+
+.dark .card-feedback {
+  background-color: #27282b;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+}
+
+.dark #navbarCapstone .nav-link {
   color: white;
 }
